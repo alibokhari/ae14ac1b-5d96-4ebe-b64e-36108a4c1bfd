@@ -37,3 +37,4 @@ jobs:
         OUTPUT_FOLDER: Reports
         OUTPUT_DETAILS: detailed
         VALIDATE_ALL_CODEBASE: false
+        MISSING_TAG : off
