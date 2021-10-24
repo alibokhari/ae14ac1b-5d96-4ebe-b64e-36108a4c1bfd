@@ -24,7 +24,6 @@ namespace ToyRobotSimulator.UnitTest
         [InlineData("Move")]
         [InlineData("left")]
         [InlineData("RIGHT")]
-        [InlineData("report")]
         public void ValidCommand(string command)
         {
             //Arrange
