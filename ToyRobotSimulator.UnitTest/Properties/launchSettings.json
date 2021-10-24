@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ToyRobotSimulator.UnitTest": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

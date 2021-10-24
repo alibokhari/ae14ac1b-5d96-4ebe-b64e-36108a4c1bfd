@@ -1,8 +1,15 @@
 version: '3.4'
 services:
-    test:
+    simulator:
+        image: ${DOCKER_REGISTRY-}toyrobotsimulator
         build:
             context: .
-            dockerfile: Dockerfile
+            dockerfile: Simulator\Dockerfile
+        container_name: "simulator"
+    test:
+        image: ${DOCKER_REGISTRY-}toyrobotsimulatortest
+        build:
+            context: .
+            dockerfile: ToyRobotSimulator.UnitTest\Dockerfile
         container_name: "test"
         
