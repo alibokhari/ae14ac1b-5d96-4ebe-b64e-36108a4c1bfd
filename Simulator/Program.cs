@@ -10,7 +10,7 @@ namespace Simulator
         {
             var readMe = new StringBuilder();
             readMe.AppendLine("**********Welcome to Toy Robot Simulation**********");
-            readMe.AppendLine("You have a square table top of dimension 6x6 from (0,0) to (5,5) to move your toy robot");
+            readMe.AppendLine("You have a square table top of dimension 8x8 from (0,0) to (7,7) to move your toy robot");
             readMe.AppendLine("Use the following commands to operate your toy robot");
             readMe.AppendLine("Place  - To place it on the table i.e place 2,3,north");
             readMe.AppendLine("Move   - To move it one unit forward in the direction it is currently facing");
@@ -22,7 +22,7 @@ namespace Simulator
             try
             {
                 var simulator = new ToyRobotSimulator.Model.Entity.ToyRobotSimulator();
-                simulator.Setup(6, 6);
+                simulator.Setup(8, 8);
                 while (true)
                 {
                     try
